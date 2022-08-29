@@ -22,8 +22,8 @@ Simple one page app that shows a new person's profile every time the button is c
 
 ### Links
 
-- [Solution URL](https://github.com/shamratPG/kanye-rest-quote-app)
-- [Live Site URL](https://shamratpg.github.io/kanye-rest-quote-app/)
+- [Solution URL](https://github.com/shamratPG/random-people-app)
+- [Live Site URL](https://shamratpg.github.io/random-people-app/)
 
 
 ### Built with

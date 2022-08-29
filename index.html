@@ -6,28 +6,22 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random User</title>
-    <style>
-        .user-item {
-            margin: 10px;
-            padding: 15px;
-            background-color: rgb(184, 164, 139);
-            border-radius: 10px;
-        }
-    </style>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-
-    <div class="container">
-        <h1>Show Random User:</h1>
-        <div id="user">
-            <h3 id="full-name"></h3>
-            <img id="pic" src="" alt="">
-            <small id="user-name"></small>
-            <p id="email"></p>
+<body class="h-screen flex flex-col justify-center items-center">
+    <div class="bg-green-400 w-2/5 rounded-lg p-8 mb-8 min-w-fit drop-shadow-xl">
+        <div class="flex flex-col justify-center items-center" id="user">
+            <h2 class="text-3xl font-semibold mb-4 text-sky-900" id="full-name"></h2>
+            <img class="w-2/4 min-w-min rounded-full border-4 border-x-sky-700 border-y-sky-500 mb-2 drop-shadow-lg"
+                id="pic" src="" alt="">
+            <p class="mb-4 text-xl text-sky-700" id="user-name"></p>
+            <p class="font-semibold text-sky-900" id="email"></p>
         </div>
-        <button onclick="getData()">New User</button>
     </div>
+    <button class="bg-sky-600 px-8 py-2 text-xl rounded font-semibold text-slate-200 hover:bg-sky-500 drop-shadow-xl"
+        onclick="getData()">New
+        User</button>
 
     <script src="js/scritp.js"></script>
 </body>

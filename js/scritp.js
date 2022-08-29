@@ -3,7 +3,8 @@ const getData = () => {
         .then(res => res.json())
         .then(data => {
             let obj = randomObj(data.results);
-            changeData(obj)
+            changeData(obj);
+            console.log(obj);
         })
 }
 
@@ -14,7 +15,7 @@ const randomObj = ary => {
 
 const changeData = obj => {
     document.getElementById('full-name').innerText = `${obj.name.first} ${obj.name.last}`
-    document.getElementById('pic').setAttribute('src', `${obj.picture.thumbnail}`)
+    document.getElementById('pic').setAttribute('src', `${obj.picture.large}`)
     document.getElementById('user-name').innerText = `${obj.login.username}`
     document.getElementById('email').innerText = `${obj.email}`
 }

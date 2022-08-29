@@ -9,8 +9,8 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="h-screen flex flex-col justify-center items-center">
-    <div class="bg-green-400 w-2/5 rounded-lg p-8 mb-8 min-w-fit drop-shadow-xl">
+<body class="h-screen flex flex-col justify-center items-center bg-gradient-to-r from-sky-200 to-blue-300 ">
+    <div class="bg-slate-100 w-2/5 rounded-lg p-8 mb-8 min-w-max drop-shadow-xl">
         <div class="flex flex-col justify-center items-center" id="user">
             <h2 class="text-3xl font-semibold mb-4 text-sky-900" id="full-name"></h2>
             <img class="w-2/4 min-w-min rounded-full border-4 border-x-sky-700 border-y-sky-500 mb-2 drop-shadow-lg"
@@ -19,9 +19,16 @@
             <p class="font-semibold text-sky-900" id="email"></p>
         </div>
     </div>
-    <button class="bg-sky-600 px-8 py-2 text-xl rounded font-semibold text-slate-200 hover:bg-sky-500 drop-shadow-xl"
+    <button class="bg-white px-8 py-2 text-xl rounded font-semibold text-sky-700 hover:bg-slate-100 drop-shadow-xl"
         onclick="getData()">New
         User</button>
+
+    <footer class="absolute bottom-0">
+        <p class="text-center text-sm text-slate-500 font-semibold">Created by <a class="text-blue-600"
+                href="https://github.com/shamratPG">Md. Shamrat
+                Hossain</a>
+        </p>
+    </footer>
 
     <script src="js/scritp.js"></script>
 </body>
